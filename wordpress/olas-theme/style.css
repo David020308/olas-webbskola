@@ -1,0 +1,50 @@
+/*
+Theme Name: Olas theme
+Theme URI: http://olalindberg.com
+Author: Ola Lindberg
+Author URI: http://olalindberg.com
+Description: Ett WordPress-tema byggt i utbildningssyfte snarare än att vara ett produktionstema. Det är byggt med Bootstrap.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: utbildning, bootstrap, development, teaching, 
+Text Domain: olas-theme
+*/
+
+body {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body>header {
+    background-color: coral;
+}
+
+#content {
+    width: 70%;
+    float: left;
+    background-color: beige;
+}
+
+#widget-area {
+    width: 30%;
+    float: right;
+    background-color: aquamarine;
+}
+
+footer.entry-footer {
+    background-color: aliceblue;
+}
+
+article {
+    border-bottom: 1px solid blue;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    margin-bottom: 1em;
+}
+
+#footer {
+    clear:both;
+    background-color: burlywood;
+}

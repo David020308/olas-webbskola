@@ -1,0 +1,43 @@
+/*
+ Theme Name:   Olas child theme
+ Theme URI:    http://olalindberg.com
+ Description:  Ett child-theme till Twenty Fifteen. Byggt i utbildningssyfte.
+ Author:       Ola Lindberg 
+ Author URI:   http://olalindberg.com
+ Template:     twentyfifteen
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         utbildning, development, child-theme, 
+ Text Domain:  olas-child-theme
+*/
+
+/* Almmän */
+body {
+    color: pink;
+}
+
+
+/* Meny */
+
+/* Innehåll */
+.entry-footer, 
+.entry-footer a {
+    
+    color: red;
+}
+
+.entry-footer a:hover {
+    
+    background-color: yellow;
+}
+
+.attachment-post-thumbnail {
+max-width: 100px;
+}
+.attachment-post-thumbnail:hover {
+background-color: yellow;
+    
+}
+
+/* Footer */
