@@ -1,67 +1,89 @@
-<!DOCTYPE html>
 <html>
+
     <head>
-        <meta charset="utf-8">
+        <meta charset=utf-8>
+        <title>Layoutexempel: float</title>
         <style>
-            #container {
-                width:1000px;
-                max-width: 100%;
+            *{ 
+                box-sizing: border-box;
+                padding: 10px;
             }
-
-            #header {
-                background-color:green;
+            
+            body {
+                max-width: 750px;
+                margin-left: auto;
+                margin-right: auto;
             }
-
-            #menu {
-                background-color:yellow;
-                width: 20%;
-                min-width: 150px;
-                float:left;
+            
+            header, 
+            footer {
+                background-color: #bbb;
             }
-
-            #content {
-                background-color:blue;
-                width:80%;
-                float:left;
+            
+            nav { background-color: #333; }
+            nav ul {
+                margin: 0;
+                padding: 0;
             }
-
-            #footer {
-                background-color:red;
-                clear:both;
-                text-align:center;
+            nav ul li {
+                display: inline-block;
             }
+            nav ul li:hover {
+                background-color: #666;
+            }
+            nav a {
+                color: white;
+            }
+            
+            article {
+                float: left;
+                width: 50%;
+            }
+            #kolumn-1 { background-color: #ddd; }
+            #kolumn-2 { background-color: #ccc; }
+            
+            footer {
+                float: left;
+            }
+            
+            section {
+                float: left;
+                width: 33%;
+            }
+            
         </style>
     </head>
     <body>
-
-        <div id="container">
-
-            <div id="header">
-                <h1>Titel eller företagsnamn</h1>
-            </div>
-
-            <div id="menu">
-                <h2>Meny</h2>
-                <ul>
-                    <li>Lorem</li>
-                    <li>Ipsum</li>
-                    <li>Dolor</li>
-                    <li>Sit amet</li>
-                </ul>
-            </div>
-                
-            <div id="content" >
-                <h2>Innehåll</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus tellus ut mauris lobortis porttitor. Curabitur lacus libero, vehicula ut lorem id, dictum iaculis eros. Proin ante nisl, pharetra vitae faucibus ut, sodales ac enim. Nam tincidunt tincidunt diam. Curabitur cursus sed enim nec molestie. Vivamus sodales ultricies commodo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed a feugiat nulla, quis placerat leo. Etiam euismod lorem a turpis consectetur, eget fermentum sapien pellentesque. Vivamus tristique est tincidunt commodo ullamcorper. Suspendisse potenti. Pellentesque non ipsum eget ante molestie mollis. Duis eleifend nisl id tempor sollicitudin.</p>
-                <p>Nam fermentum dui augue, sed posuere ligula sodales ac. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras eu nisi lacinia, lacinia nisl ac, consectetur neque. Aenean et lacus hendrerit, rhoncus odio ut, pharetra diam. Praesent interdum vitae mi vel hendrerit. Suspendisse luctus augue ac elit vulputate, vel placerat nisl tincidunt. Phasellus interdum facilisis porttitor. Duis dapibus magna ut imperdiet lobortis.</p>
-                <p>Aliquam semper ex id justo pulvinar malesuada. Aenean porttitor ante enim, in tincidunt felis malesuada non. Morbi molestie felis eu consequat tincidunt. Duis faucibus suscipit nibh, vel lobortis arcu lacinia nec. Aenean hendrerit, dolor quis vehicula condimentum, diam nunc fringilla nisl, in finibus orci risus sed nunc. Ut in augue erat. Morbi quis sollicitudin odio, sed luctus nisi. Pellentesque hendrerit libero rhoncus, rutrum libero id, gravida nibh. Donec id porttitor turpis, interdum ultrices libero. Proin id turpis id augue fringilla consectetur et et metus.</p>
-            </div>
-
-            <div id="footer">
-                Sidfot med tex kontaktinformation
-            </div>
-
-        </div>
-
+        
+        <header>
+            <h1>Sidhuvud med text logo och meny</h1>
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="#">Produkter</a></li>
+                <li><a href="#">Tjänster</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+        
+        <article id="kolumn-1">
+            <h2>Kolumn 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus placerat, erat at gravida porta, ante sem tempor justo, a feugiat metus quam fermentum sem. Donec sit amet lobortis magna. Duis non mi ultricies, convallis turpis vel, sodales dui. Nunc bibendum id ipsum quis interdum. Duis placerat ornare mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent libero ex, rhoncus et dolor non, bibendum faucibus neque. Praesent vestibulum varius enim non mattis. Nam fringilla elementum ex, id semper ex porttitor eget. Nullam ut nisl dictum, volutpat lacus eu, suscipit turpis.</p>
+        </article><!-- Här får inte vara något mellanrum. Isåfall radbryter den tyvärr. --><article id="kolumn-2">
+            <h2>Kolumn 2</h2>
+            <p>Morbi gravida lobortis sapien ac interdum. Etiam et faucibus orci. Ut ut leo blandit, fermentum felis eu, volutpat arcu. Maecenas finibus urna nunc, eu fringilla augue aliquet bibendum. Maecenas arcu lacus, convallis a elementum quis, facilisis ut lorem. Ut nec hendrerit est. Phasellus elementum pellentesque nunc ac efficitur. Nullam diam leo, viverra sit amet ultrices eu, faucibus sit amet nulla. Fusce ligula lorem, euismod vel nunc eget, feugiat rhoncus sem. Sed tempus in tellus in pharetra. Proin bibendum felis at lorem consequat, et molestie tellus commodo.</p>
+        </article>
+        
+        <footer>
+            <section>
+                <p>Sidfot med tex kontakt&shy;information</p>
+            </section><section>
+                <p>Och Facebook / Instagram-länkar</p>
+            </section><section>
+                <p>Och en karta kanske? Dessa måste fylla ut minst 33% annars blir de för små.</p>
+            </section>
+        </footer>
+        
     </body>
 </html>
