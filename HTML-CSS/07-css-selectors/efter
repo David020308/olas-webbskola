@@ -1,0 +1,41 @@
+header, footer {
+    background-color: lightgray;
+}
+
+header {
+    padding-left: 20px;
+}
+
+header h1 {
+    font-family: fantasy;
+    margin-bottom: 0;
+}
+header p {
+    margin-top: 0;
+}
+
+.chark {
+    background-color: indianred;
+}
+.mejeri {
+    background-color: lightgoldenrodyellow;
+}
+.gront {
+    background-color: palegreen;
+}
+
+.produkt:hover{
+    background-color: lightgray;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    color: gray;
+}
