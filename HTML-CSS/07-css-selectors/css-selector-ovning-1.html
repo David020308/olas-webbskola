@@ -4,105 +4,97 @@
         <title>CSS Selectors</title>
         <meta charset="utf-8">
         <style>
-            div {
-                padding: 1em;
-                margin: 1em;
+            header, 
+            .produkt,
+            footer {
+                padding: 10px;
+                margin: 10px;
             }
-            .uppgifter {
-                background-color:#eee;
-            }
-            .uppgift {
-                font-style: italic;
-            }
-            #uppgift5 div {
-                border: 1px solid red;
-                background-color: white;
+                        
+            main {
+                display: flex;
+                flex-wrap: wrap;
+                max-width: 100%;
             }
             
-            #sida {
-                margin: 0;
-                padding: 0;
+            .produkt {
+                background-color: aliceblue;
             }
-            #sida div {
-                border: 1px solid black;
-                
+            
+            .produkt img {
+                width: 200px;
+                height: 200px;
+                background-color: aqua;
             }
+            
+            .produkt section {
+                display: flex;
+                justify-content: space-between;
+            }
+            
+            a { display: block; }
+            
+            /**/
+            
+            header, footer {
+                background-color: beige;
+            }
+            
+            .produkt:hover{
+                background-color: antiquewhite;
+            }
+            
         </style>
         <link rel="stylesheet" href="din-style.css">
     </head>
     <body>
-        <div>
-            <h1>Övning - CSS selectors</h1>
-            <p>Många ändringar på en webbsida går att göra genom att bara ändra CSS. Inte HTML. HTML kan oftast vara skapad från något verktyg automatiskt som tex WordPress. I de fallen är det mycket enklare att bara ändra på CSS.</p>
-            <p>För att klara att göra ändringarna då behöven du behärska CSS selectors. </p>
-            <h2>Gör följande övningar</h2>
-            <ol>
-                <li>Högerklicka på denna sidan och välj Visa källa</li>
-                <li>Du ser då HTML-koden för denna sidan. Markera all HTML och kopiera.</li>
-                <li>Öppna Brackets och klistra in HTMLen i ett nytt dokument som du sparar som css-selector-ovning.html</li>
-                <li>Skapa ett nytt dokument i Brackets som du sparar som din-style.css. I samma mapp som HTML-filen.</li>
-                <li>Uppgiften är nu att göra alla ändringar genom att endast ändra CSS:en i din-style.css. Du får inte göra ändringar i HTML-filen.</li>
-            </ol>
-            <p>Lycka till och ha så kul :)</p>
-        </div>
+        <header>
+            <h1 id="butiks-namn">Matbutiken online</h1>
+            <p class="beskrivning">Spara tid - handla din mat på webben!</p>
+        </header>
         
+        <main>
+            <a href="#">
+                <article class="produkt chark">
+                    <img>
+                    <section>
+                        <p class="namn">Korv</p>
+                        <p class="pris">25:-</p>
+                    </section>
+                </article>
+            </a>
+            <a href="#">
+                <article class="produkt chark">
+                    <img>
+                    <section>
+                        <p class="namn">Skinka</p>
+                        <p class="pris">25:-</p>
+                    </section>
+                </article>
+            </a>
+            <a href="#">
+                <article class="produkt mejeri">
+                    <img>
+                    <section>
+                        <p class="namn">Ost</p>
+                        <p class="pris">100:-</p>
+                    </section>
+                </article>
+            </a>
+            <a href="#">
+                <article class="produkt mejeri">
+                    <img>
+                    <section>
+                        <p class="namn">Smör</p>
+                        <p class="pris">50:-</p>
+                    </section>
+                </article>
+            </a>
+        </main>
         
-        <div id="uppgift1" class="uppgifter">
-            <p class="uppgift">
-                Byt färg denna texten.
-            </p>
-        </div>
+        <footer>
+            <p>Kontaktinformation här</p>
+        </footer>
         
-        <div id="uppgift2" class="uppgifter">
-            <p class="uppgift">
-                Byt färg på alla länkar (från standard blå) till lime.<br>
-                Gör så att bakgrundsfärgen på länken blir rosa när man håller musen över länken.
-            </p>
-            <p><a href="#">Länk 1</a></p>
-        </div>
-        
-        <div id="uppgift3" class="uppgifter">
-            <p class="uppgift">
-                Gör så att dessa 3 textrader blir med stora bokstäver.<br>
-                Gör så att alla grå rutor får grön border-color.<br>
-                Byt till olika typsnitt för alla uppgiftsbeskrivningar.
-            </p>
-        </div>
-        
-        <div id="uppgift4" class="uppgifter">
-            <p class="uppgift x">Gör textfärgen på "Ettan" röd och "Femman" grön</p>
-            <ul>
-                <li>Ettan</li>
-                <li>Tvåan</li>
-                <li>Trean</li>
-                <li>Fyran</li>
-                <li>Femman</li>
-            </ul>
-        </div>
-        
-        <div id="uppgift5" class="uppgifter">
-            <p class="uppgift">
-                Ändra bakgrundsfärgen på XXX utan att ändra på något annat<br>
-                Ändra sedan typsnittet på YYY utan att ändra något annat
-            </p>
-            <p class="x">XXX</p>
-            <p class="y">YYY</p>
-        </div>
-        
-        
-        <div id="uppgift6" class="uppgifter">
-            <p class="uppgift">
-                Gör så att rutan Vänster är 35% och vänsterjusterad och rutan Höger är 35% och högerjusterad<br>
-                Gör sidhuvud och sidfot 100% breda och över respektive under höger och vänster-rutorna
-            </p>
-
-            <div id="sida">
-                <div class="sidhuvud">Sidhuvud</div>
-                <div class="vanster">Vänster</div>
-                <div class="hoger">Höger</div>
-                <div class="sidfot">Sidfot</div>
-            </div>
-        </div>
-
     </body>
 </html>
