@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Grunhdläggande layout med Flexbox</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <style>
+            header, article, aside, footer, nav {
+                padding: 5px 20px;
+                margin: 10px;
+                background-color: #cccccc;
+            }
+            
+            main {
+                display: flex;
+            }
+            
+            article {
+                width: 70%;
+            }
+            aside {
+                width: 30%;
+                min-width: 200px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Namn på sidan</h1>
+        </header>
+        
+        <nav>
+            <p><a href="#">Hem</a> | <a href="#">Produkter</a> | <a href="#">Tjänster</a> | <a href="#">Kontakt</a></p>
+        </nav>
+        
+        <main>
+            <article>
+                <h1>Huvudrubrik för artikeln här</h1>
+                <p>Innehåll, huvudartikel här.</p>
+            </article>
+            
+            <aside>
+                <h1>Sidebar med widgets</h1>
+                <p>Länkar, nyhetsbrev osv</p>
+            </aside>
+        </main>
+        
+        <footer>
+            <p>Sidfot</p>
+        </footer>
+    </body>
+</html>
