@@ -4,6 +4,13 @@ header, footer {
 
 header {
     padding-left: 20px;
+    background-image: url(img/paprika.jpg);
+    background-size: cover;
+}
+
+header h1, 
+header p {
+   color: white;
 }
 
 header h1 {
@@ -63,6 +70,11 @@ footer p {
     height: 80px;
 }
 
-.produkt {
+main a {
     flex: 1;
+    min-width: 200px;
+}
+
+.produkt img {
+    width: 100%;
 }
