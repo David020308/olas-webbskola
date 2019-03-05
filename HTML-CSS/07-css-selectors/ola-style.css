@@ -10,7 +10,7 @@ header {
 
 header h1, 
 header p {
-   color: white;
+    color: white;
 }
 
 header h1 {
@@ -51,7 +51,14 @@ footer p {
     color: gray;
 }
 
-/**/
+main a {
+    flex: 1;
+    min-width: 200px;
+}
+
+.produkt img {
+    width: 100%;
+}
 
 .extrapris {
     position: relative;
@@ -68,13 +75,11 @@ footer p {
     display: block;
     width: 80px;
     height: 80px;
+    animation:spin 3s linear infinite;
 }
-
-main a {
-    flex: 1;
-    min-width: 200px;
-}
-
-.produkt img {
-    width: 100%;
+@keyframes spin { 
+    50% { 
+        transform: rotateY(90deg);
+        transform:rotateY(90deg); 
+    } 
 }
