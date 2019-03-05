@@ -39,3 +39,26 @@ a:hover {
 footer p {
     color: gray;
 }
+
+/**/
+
+.extrapris {
+    position: relative;
+}
+
+.extrapris::after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-image: url(img/star.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    width: 80px;
+    height: 80px;
+}
+
+.produkt {
+    flex: 1;
+}
