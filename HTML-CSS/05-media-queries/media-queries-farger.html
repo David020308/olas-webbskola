@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Media Queries - Färger</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+        <style>
+            body {
+                background-color: lawngreen;
+            }
+
+            @media screen and (min-width: 480px) {
+                body {
+                    background-color: beige;
+                }
+            }
+
+            @media screen and (min-width: 768px) {
+                body {
+                    background-color:burlywood;
+                }
+            }
+
+            @media screen and (min-width: 992px) {
+                body {
+                    background-color:coral;
+                }
+            }
+
+            @media print {
+                body {
+                    background-color: white;
+                    color: black;
+                }
+
+                a:after{
+                    content:" (" attr(href) ") ";
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <header>
+            <h1>Media Queries - Färgexempel</h1>
+            <p>Olika CSS för olika skärmstorlekar med hjälp av <a href="https://www.w3schools.com/csSref/css3_pr_mediaquery.asp">Media Queries</a></p>
+            <p>Ändra storlek på ditt webbläsarfönster så ser du :) Förhandsgranska även en utskrift så ser du.</p>
+        </header>
+
+        <main>
+            <article>
+                <h2>Artikel 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lacinia, metus et condimentum luctus, diam libero condimentum neque, in dapibus quam libero vitae nulla. Nulla ultricies lobortis ultrices. Nulla luctus aliquet tellus, quis sagittis massa egestas vitae. Suspendisse convallis leo ac mauris tincidunt, eget elementum risus posuere. Nam eget rhoncus quam. Mauris in eros at nisi luctus suscipit. Integer porttitor in orci eget porta. Morbi in massa justo. Donec molestie vehicula lacus id commodo. Maecenas augue metus, efficitur non quam ut, ullamcorper ornare ex. Aenean et velit mollis, accumsan velit in, elementum justo. Sed facilisis, lorem sit amet porta suscipit, neque orci ornare lectus, eget egestas sem felis ac ligula. Fusce malesuada velit ut ornare dapibus. Sed porta, elit vel tincidunt fermentum, dui justo bibendum mauris, eu hendrerit quam lacus ac augue. Nunc in lorem eleifend, iaculis lectus id, auctor sapien. Suspendisse vel sapien urna.</p>
+                <p>Maecenas elit erat, blandit at lobortis quis, semper vitae orci. Fusce cursus pulvinar ante vel semper. Vestibulum pretium faucibus semper. Donec feugiat viverra mi vel tincidunt. Nullam sagittis nulla non gravida posuere. Fusce feugiat vel dui a blandit. Vestibulum efficitur sapien massa, in auctor neque viverra nec. Pellentesque sit amet tincidunt quam. Donec quam enim, dignissim elementum leo et, pretium malesuada nunc. Ut convallis sollicitudin interdum. Nam eget imperdiet risus. Nullam sagittis gravida blandit.</p>
+            </article>
+
+            <article>
+                <h2>Artikel 2</h2>
+                <p>Nam enim est, placerat maximus dictum nec, sagittis eget arcu. Curabitur at velit mauris. Mauris vulputate sem sed facilisis lacinia. Quisque velit elit, euismod eu consectetur in, porta porttitor lectus. Cras justo odio, suscipit imperdiet scelerisque non, malesuada sit amet magna. Sed faucibus elit velit, non fringilla dui ultrices id. Donec sit amet lectus suscipit, elementum risus cursus, congue tellus. Sed sit amet nisi ac metus sollicitudin luctus nec et ante. Curabitur vehicula magna vel eros hendrerit fringilla.</p>
+                <p>Praesent elementum est quis dolor varius, id semper ipsum ultrices. Proin vehicula luctus mi vel auctor. Mauris finibus tellus quis imperdiet mattis. Donec in mauris et leo venenatis bibendum eu sed mauris. Quisque gravida dictum imperdiet. Integer gravida tortor sem, ac congue turpis tincidunt at. Integer congue, velit nec dictum gravida, velit leo consectetur nisi, a venenatis erat mauris volutpat libero. Suspendisse ac luctus velit. Sed varius nulla in semper varius. Nam posuere velit non auctor commodo. Maecenas lobortis vitae nulla ac lacinia. Cras in sodales massa. In porttitor nisi eu hendrerit lacinia.</p>
+                <p>Nullam fringilla ipsum dolor, faucibus vulputate diam tincidunt vel. Nam ac purus nec elit hendrerit consequat. Mauris vitae lorem nisi. Aliquam enim neque, blandit et dui et, feugiat imperdiet odio. Quisque ac porttitor ex, a elementum dolor. Ut imperdiet auctor ex a malesuada. Maecenas finibus tempor velit, vitae sagittis lorem imperdiet id. Nunc tincidunt in metus quis consequat. Aenean pharetra ante nibh, in bibendum dolor ultrices vitae. Suspendisse rhoncus nulla nec elementum facilisis. Ut vel blandit neque. Suspendisse iaculis nibh felis, vitae blandit purus tempor sit amet. In tempus nibh et dui pretium tincidunt. Nulla consectetur convallis lacinia. Donec vehicula, arcu eu gravida auctor, odio lorem lacinia ex, non cursus nunc justo quis nibh. Vestibulum elit ex, cursus ut luctus ut, accumsan ut elit.</p>
+            </article>
+        </main>
+
+    </body>
+</html>
