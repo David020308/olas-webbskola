@@ -2,6 +2,8 @@
 <html>
     <head>
         <title>Matbutiken - CSS Selectors, övning 1</title>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
@@ -31,16 +33,17 @@
             }
         </style>
         <link rel="stylesheet" href="din-style.css">
+        <link rel="stylesheet" href="ola-style.css">
     </head>
     <body>
         <header>
-            <a href=""><h1 id="butiks-namn">Matbutiken</h1></a>
+            <a id="butiksnamn" href="#"><h1>Matbutiken</h1></a>
             <p class="beskrivning">Mat på webben!</p>
         </header>
         
         <main>
             <a href="#">
-                <article class="produkt chark">
+                <article class="produkt chark extrapris">
                     <img src="img/korv.jpg">
                     <section>
                         <p class="namn">Korv</p>
@@ -67,7 +70,7 @@
                 </article>
             </a>
             <a href="#">
-                <article class="produkt gront">
+                <article class="produkt gront extrapris">
                     <img src="img/majs.jpg">
                     <section>
                         <p class="namn">Majs</p>
