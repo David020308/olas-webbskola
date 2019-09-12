@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grid 2</title>
+    <style>
+
+        /* 99B898   FECEAB   FF847C   E84A5F   2A363B */
+
+        body {
+            background-color: #99B898;
+            margin: 20px 40px;
+            font-family: sans-serif;
+            font-weight: 100;
+            text-transform: uppercase;
+        }
+
+        header, footer, nav {
+            background-color: #2A363B;
+            color: #FECEAB;
+            padding: 20px 40px;
+        }
+        
+        nav {
+            color: #2A363B;
+            background-color: #FF847C;
+            padding: 20px 40px;
+        }
+
+        main{
+            background-color: #FECEAB;
+            color: #2A363B;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-gap: 40px;
+            padding: 20px 40px;
+        }
+
+        footer {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 40px;
+        }
+
+        img {
+            width: 100%;
+        }
+        h1,h2,h3 {
+            
+            font-weight: 100;
+        }
+        a {
+            color: #2A363B;
+            font-style: italic;
+        }
+        a:hover{
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="logo">Debitis distinctio</h1>
+    </header>
+    <nav>
+        <a href="#">Alias</a> |
+        <a href="#">Dolores</a> |
+        <a href="#">Illum sapiente</a> |
+        <a href="#">Ipsam</a> |
+        <a href="#">Nusab</a>
+    </nav>
+    <main>
+        <article>
+            <h1>Lorem ipsum</h1>
+            <p>Dolor sit amet consectetur adipisicing elit. Asperiores at et omnis odit, rerum, libero, debitis distinctio eius voluptas facilis soluta laudantium a. Id, reiciendis omnis vero ipsam ipsum laudantium!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias dolores illum sapiente ipsam nulla debitis accusamus, ab neque eius distinctio rem corporis eos quasi cum porro consequuntur ducimus minima earum ex sed cupiditate dolore! Itaque, pariatur recusandae reiciendis quis commodi corporis debitis, illum impedit magnam harum eius repellat sunt nobis illo adipisci dolore facilis? Esse perferendis labore quisquam ab ullam, sunt reiciendis repellendus vel eius fugit eos magni dolore quidem tempore exercitationem quis quaerat architecto.</p>
+        </article>
+        <article>
+            <h1>Adipisicing</h1>
+            <img src="https://placekitten.com/g/600/300" alt="Rerum libero">
+    </article>
+    </main>
+    <footer>
+        <section><img src="https://placekitten.com/g/600/200" alt="Dolor sit amet consecte"></section>
+        <section>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, soluta.</section>
+    </footer>
+</body>
+</html>
+
