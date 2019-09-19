@@ -8,6 +8,9 @@
     <title>Grid - prov c1</title>
     <style>
         /*
+
+        https://css-tricks.com/look-ma-no-media-queries-responsive-layouts-using-css-grid/
+
         #e27d60
         #85dcba
         #7fc6b8
@@ -16,68 +19,34 @@
         #41b3a3
         */
 
-        *{
+        * {
             box-sizing: border-box;
-            margin:0;
+            margin: 0;
         }
 
-        body {
-            margin: 0 50px;
-        }
+        .hero {
+            /* Photo by mnm.all on Unsplash */
+            background: url('https://images.unsplash.com/photo-1518176258769-f227c798150e') center;
+            background-size: cover;
+            padding: 4rem 2rem;
 
-        header {
-            background-color: #e27d60;
-        }
-
-        nav {
-            background-color: #85dcba;
-        }
-
-        main {
-            background-color: #7fc6b8;
+            /* Grid styles */
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
         }
-
-        article {
-            background-color: #41b3a3;
-        }
-
-        footer {
-            background-color: #e27d60;
-        }
-
-        header,nav,article,footer {
-            padding: 10px 30px;
-        }
-
     </style>
 </head>
 
 <body>
-    <header>
-        <h1 id="logo">Header</h1>
-    </header>
-    <nav>
-        <a href="#">Nav 1</a> |
-        <a href="#">Nav 2</a> |
-        <a href="#">Nav 3</a> |
-        <a href="#">Nav 4</a> |
-        <a href="#">Nav 5</a>
-    </nav>
-    <main>
+    <section class="hero">
+        <h1>You thirsty?</h1>
         <article>
-            <h1>A1</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius sit officiis ab voluptatum, dicta reprehenderit quas labore quia fugiat mollitia! Illo veniam, rem animi, ipsum id libero fugiat excepturi velit quasi quis odio sapiente error repellat. Laboriosam autem quaerat, necessitatibus omnis sunt ipsam natus blanditiis nihil officia eveniet nesciunt similique dolores possimus quo perspiciatis aliquam ab cupiditate! Libero quae vero recusandae molestias tempora repellendus fugiat iusto voluptas maiores quam voluptatum voluptates, in rerum voluptate eaque at accusantium alias provident nam neque reprehenderit repellat. Corporis placeat saepe aliquam beatae, magnam vel quae repudiandae rem aperiam explicabo accusamus, nihil facilis quaerat itaque.</p>
+            <p>Explore local breweries with just one click and stirred by starlight across the centuries light years
+                great turbulent clouds circumnavigated paroxysm of global death.</p>
+            <a href="#breweries">Browse Breweries</a>
         </article>
-        <article>
-            <h1>A2</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At odit neque est, doloribus nulla itaque asperiores ab eaque blanditiis, explicabo culpa deserunt sapiente. Incidunt commodi quis officia modi harum porro eligendi voluptates veniam vitae reiciendis voluptatem accusantium in nemo nesciunt magnam aspernatur, distinctio repellat quisquam quasi. Consequuntur fugit, animi earum minus eligendi illum ratione ad eius soluta nostrum quaerat in veritatis laborum laboriosam eveniet fugiat error quo praesentium harum! Unde ad explicabo debitis esse assumenda.</p>
-        </article>
-    </main>
-    <footer>
-        <h1>Footer</h1>
-    </footer>
+    </section>
 </body>
 
 </html>
