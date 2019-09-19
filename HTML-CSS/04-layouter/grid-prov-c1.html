@@ -16,6 +16,11 @@
         #41b3a3
         */
 
+        *{
+            box-sizing: border-box;
+            margin:0;
+        }
+
         header {
             background-color: #e27d60;
         }
@@ -29,6 +34,27 @@
             display: grid;
             grid-template-columns: 1fr 3fr;
             grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        }
+
+        aside {
+            background-color: #c38d9e;
+            grid-row-start: 1;
+            grid-row-end: 6;
+        }
+        article {
+            background-color: #41b3a3;
+        }
+        #first-news{
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        #second-news{
+            grid-row-start: 3;
+            grid-row-end: 5;
+        }
+        #first-news{
+            grid-row-start: 1;
+            grid-row-end: 3;
         }
 
         footer {
@@ -52,13 +78,13 @@
         <aside>
             <h1>ASIDE</h1>
         </aside>
-        <article>
+        <article id="first-news">
             <h1>A1</h1>
         </article>
-        <article>
+        <article id="second-news">
             <h1>A2</h1>
         </article>
-        <article>
+        <article id="third-news">
             <h1>A3</h1>
         </article>
     </main>
