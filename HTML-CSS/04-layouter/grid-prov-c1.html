@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grid - prov c1</title>
+    <style>
+        /*
+        #e27d60
+        #85dcba
+        #7fc6b8
+        #e8a87c
+        #c38d9e
+        #41b3a3
+        */
+
+        header {
+            background-color: #e27d60;
+        }
+
+        nav {
+            background-color: #85dcba;
+        }
+
+        main {
+            background-color: #7fc6b8;
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        }
+
+        footer {
+            background-color: #e27d60;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 id="logo">Header C1</h1>
+    </header>
+    <nav>
+        <a href="#">CA</a> |
+        <a href="#">CB</a> |
+        <a href="#">CC</a> |
+        <a href="#">CD</a> |
+        <a href="#">CE</a>
+    </nav>
+    <main>
+        <aside>
+            <h1>ASIDE</h1>
+        </aside>
+        <article>
+            <h1>A1</h1>
+        </article>
+        <article>
+            <h1>A2</h1>
+        </article>
+        <article>
+            <h1>A3</h1>
+        </article>
+    </main>
+    <footer>
+        <h1>Footer</h1>
+    </footer>
+</body>
+
+</html>
