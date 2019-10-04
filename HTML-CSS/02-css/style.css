@@ -2,6 +2,10 @@ body {
     color:forestgreen;
 }
 
+h1 {
+    font-size: 110%;
+}
+
 .rosa {
     background-color: rebeccapurple;
 }
@@ -24,4 +28,27 @@ pre {
     background-color: #ccc;
     border: 1px solid black;
     color: black;
+}
+
+.three-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px 20px;
+
+    background-color: blueviolet;
+}
+
+.lightgray{
+    background-color: bisque;
+}
+
+#pixlar {
+    color: red;
+}
+.procent {
+    color: pink;
+}
+
+section:first-child{
+    font-weight: bold;
 }
