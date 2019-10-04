@@ -3,11 +3,22 @@ body {
 }
 
 .rosa {
+    background-color: rebeccapurple;
+}
+
+.rosa {
     background-color: hotpink;
 }
 
-a {}
+nav a {
+    color: burlywood;
+}
 
+/* en kommentar i css */
+
+a:hover{
+    background-color: black;
+}
 
 pre {
     background-color: #ccc;
