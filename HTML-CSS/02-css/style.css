@@ -49,6 +49,11 @@ pre {
     color: pink;
 }
 
-section:first-child{
-    font-weight: bold;
+p:first-child{
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+article:last-child{
+    color: blue;
 }

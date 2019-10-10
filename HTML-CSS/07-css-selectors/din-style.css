@@ -1,1 +1,19 @@
 /* Här gör du alla dina ändringar */
+
+header,
+.produkt,
+footer {
+    padding: 10px;
+    margin: 10px;
+    background-color: gray;
+}
+
+main {}
+
+.produkt {
+    background-color: lightgray;
+}
+
+.produkt section {}
+
+main a {}

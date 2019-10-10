@@ -1,11 +1,41 @@
-header, footer {
-    background-color: lightgray;
+
+/* Layout - grids */
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+
+.produkt section {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+}
+
+/* Layout end */
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 18px;
 }
 
 header {
-    padding-left: 20px;
+    padding: 1em;
     background-image: url(img/paprika.jpg);
     background-size: cover;
+}
+
+header a:hover{
+    text-decoration: none;
+}
+
+header * {
+    margin: 0;
 }
 
 header h1, 
@@ -15,14 +45,6 @@ header p {
 
 header h1 {
     font-family: fantasy;
-    margin-bottom: 0;
-}
-header p {
-    margin-top: 0;
-}
-
-.produkt {
-    min-width: 25%;
 }
 
 .chark {
@@ -47,39 +69,37 @@ a:hover {
     text-decoration: underline;
 }
 
-footer p {
-    color: gray;
+footer {
+    background-color: lightgray;
 }
 
-main a {
-    flex: 1;
-    min-width: 200px;
+footer p {
+    color: gray;
 }
 
 .produkt img {
     width: 100%;
 }
 
-.extrapris {
-    position: relative;
+.pris {
+    text-align: right;
 }
 
-.extrapris::after {
-    content: '';
-    position: absolute;
-    top: -5px;
-    right: -5px;
-    background-image: url(img/star.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: block;
-    width: 80px;
-    height: 80px;
-    animation:spin 3s linear infinite;
+.extrapris .pris {
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
-@keyframes spin { 
+
+@keyframes pulse {
+
+    0% { 
+        opacity: 0.5;
+    }
     50% { 
-        transform: rotateY(90deg);
-        transform:rotateY(90deg); 
-    } 
-}
+        opacity: 1.0;
+    }
+    100% { 
+        opacity: 0.5;
+    }
+  }
