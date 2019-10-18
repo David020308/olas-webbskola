@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grid - prov c1 - Grid areas och responsiv med Media Queries</title>
+    <style>
+        /*
+        #e27d60
+        #85dcba
+        #7fc6b8
+        #e8a87c
+        #c38d9e
+        #41b3a3
+        */
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        /* LAYOUT start */
+
+        body {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas:
+                "he     he      he"
+                "na     na      na"
+                "as     ar1     ar1"
+                "as     ar1     ar1"
+                "as     ar2     ar2"
+                "as     ar2     ar2"
+                "as     ar3     ar3"
+                "fo     fo      fo";
+
+        }
+
+        header {
+            grid-area: he;
+        }
+
+        nav {
+            grid-area: na;
+        }
+
+        aside {
+            grid-area: as;
+        }
+
+        article#first-news {
+            grid-area: ar1;
+        }
+
+        article#second-news {
+            grid-area: ar2;
+        }
+
+        article#third-news {
+            grid-area: ar3;
+        }
+
+        footer {
+            grid-area: fo;
+            display: grid;
+            grid-template-areas: "fo1 fo2 fo3";
+        }
+
+        footer section:first-child {
+            grid-area: fo1;
+        }
+
+        footer section:nth-child(2) {
+            grid-area: fo2;
+
+        }
+
+        footer section:last-child {
+            grid-area: fo3;
+        }
+
+        /* LAYOUT end */
+
+        header {
+            background-color: #e27d60;
+        }
+
+        nav {
+            background-color: #85dcba;
+        }
+
+        aside {
+            background-color: #c38d9e;
+        }
+
+        article {
+            background-color: #41b3a3;
+        }
+
+        footer {
+            background-color: #e27d60;
+        }
+
+        header,
+        nav,
+        aside,
+        article,
+        footer section {
+            padding: 1em 2em;
+        }
+
+        img {
+            width: 100%;
+            display: block;
+            margin: 1em 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 id="logo">Header C1</h1>
+        <p>Grid areas och responsiv med media queries</p>
+    </header>
+    <nav>
+        <a href="#">CA</a> |
+        <a href="#">CB</a> |
+        <a href="#">CC</a> |
+        <a href="#">CD</a> |
+        <a href="#">CE</a>
+    </nav>
+
+    <aside>
+        <h1>ASIDE</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus architecto earum eum dolorem laudantium
+            reiciendis, necessitatibus maxime nostrum voluptatem fugiat vero sed, amet ea a. Eaque voluptatibus
+            asperiores laboriosam officiis!</p>
+        <h1>Kontakt & info</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda dicta dolores architecto deserunt quam
+            ratione mollitia beatae optio quaerat ex. Explicabo est beatae dolores non culpa suscipit dolor, laudantium
+            ipsum.</p>
+    </aside>
+    <article id="first-news">
+        <h1>Katter</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid, iste? Odit explicabo dignissimos non
+            quibusdam modi iusto voluptas pariatur error provident. Commodi vel, tenetur sed beatae esse dolorum
+            sapiente voluptatum porro maxime inventore nostrum sunt corporis totam iste placeat, optio nam in tempore
+            necessitatibus. Nisi quas, neque esse, quo praesentium voluptatibus nemo voluptas iure dolorum aliquam
+            obcaecati ullam sapiente quaerat nostrum</p>
+        <img src="https://placekitten.com/500/300">
+        <p>reiciendis eos velit voluptatum repudiandae officia nobis provident
+            et consequuntur? Dolore, in, architecto impedit rerum libero voluptatum placeat quae tempora suscipit
+            fugiat, distinctio quod eveniet esse fugit eum. Facilis, doloremque reprehenderit. Obcaecati officiis
+            provident consequuntur, eum recusandae quam unde?</p>
+    </article>
+    <article id="second-news">
+        <h1>Hundar</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas veritatis labore iusto eius voluptatem
+            sapiente laboriosam mollitia ea vel odio, ullam in. Sunt, modi amet cumque magni repudiandae eveniet
+            voluptatibus.</p>
+        <img src="https://placedog.net/500/280">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, et quos ipsa, fugiat velit provident quia
+            natus minima est quis aspernatur porro?</p>
+    </article>
+    <article id="third-news">
+        <h1>Björnar</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia voluptatibus ad voluptatem distinctio
+            accusamus! Ducimus iusto fuga soluta. Ab aperiam possimus, recusandae fugiat autem quaerat delectus odit rem
+            reprehenderit provident!</p>
+        <img src="https://placebear.com/700/300">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium inventore aspernatur neque eligendi illo
+            ex, ipsam illum suscipit natus dolores repudiandae quo exercitationem quisquam?</p>
+    </article>
+
+    <footer>
+        <section>
+            <h1>Kontakt</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolor similique dolore voluptatum
+                delectus quas est sit distinctio pariatur, nobis, sequi illum! Rerum, saepe. Alias maiores praesentium
+                amet eius sunt?</p>
+        </section>
+        <section>
+            <h1>Om</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolor similique dolore voluptatum
+                delectus quas est sit distinctio pariatur, nobis, sequi illum! Rerum, saepe. Alias maiores praesentium
+                amet eius sunt?</p>
+        </section>
+        <section>
+            <h1>Andra djur</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolor similique dolore voluptatum
+                delectus quas est sit distinctio pariatur, nobis, sequi illum! Rerum, saepe. Alias maiores praesentium
+                amet eius sunt?</p>
+        </section>
+    </footer>
+</body>
+
+</html>
