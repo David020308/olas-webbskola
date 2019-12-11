@@ -1,68 +1,88 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Grunhdläggande layout med Flexbox</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <style>
-          
-            /* Ändrar hur alla boxar i hela dokumentet mäts */
-            * {
-                box-sizing: border-box;
-            }
-            
-            header, article, aside, footer, nav {
-                padding: 10px;
-                margin: 10px;
-                background-color: lightgray;
-            }
-            
-            main {
-                display: flex;
-                flex-wrap: wrap;
-            }
-            
-            article {
-                width: 30%;
-                min-width: 300px;
-                flex-grow: 1;
-            }
-        </style>
-        
-    </head>
-    <body>
-        
-        <!-- header, nav och footer behövs eg. inte för exemplet -->
-        <header>
-            <h1>Namn på sidan</h1>
-        </header>
-        
-        <nav>
-            <p><a href="#">Hem</a> | <a href="#">Produkter</a> | <a href="#">Tjänster</a> | <a href="#">Kontakt</a></p>
-        </nav>
-        
-        <main>
-            <article>
-                <h1>Lorem ipsum dolor sit amet</h1>
-                <p>Consectetur adipiscing elit. Proin in nisi sit amet diam porttitor finibus quis ut magna. Vivamus posuere finibus lacus, fringilla vestibulum orci sagittis a. Ut non dapibus sem. Morbi id nibh et nisl ornare dictum. Phasellus eu felis nunc. Sed sed risus ex. Integer vestibulum nibh nec interdum congue. Ut ac fermentum urna, et vestibulum metus. Sed pulvinar molestie ligula, eget aliquam velit vestibulum ut. Integer a porta neque.</p>
-            </article>
-            
-            <article>
-                <h1>Aenean vel eros ante</h1>
-                <p>Pellentesque dignissim vitae mauris id semper. Fusce venenatis quis erat in imperdiet. Maecenas sit amet blandit nisi. Morbi tempor in est in tristique. Aenean non facilisis risus. Ut congue metus vitae lorem accumsan, sed placerat neque ultricies. Vestibulum non orci gravida, accumsan turpis sit amet, tristique nisi. Aliquam erat volutpat. Mauris et venenatis dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus sollicitudin lectus sit amet mauris volutpat, non aliquam sem posuere. Sed quis nulla in leo tempus dictum at vitae dolor. In nec ullamcorper nulla, et porttitor nisl. Aliquam pulvinar, ligula ac dapibus consectetur, ante sem blandit elit, id ullamcorper quam eros et ligula.</p>
-            </article>
-            
-            <article>
-                <h1>Aliquam eu sodales mi</h1>
-                <p>Ina eleifend magna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla ornare lorem ligula, non ultricies arcu pulvinar vel. Integer porta nisi tellus, commodo elementum felis tincidunt at. Etiam ac tempor mauris. Praesent tincidunt, lacus et scelerisque dapibus, dolor eros lobortis mauris, eget efficitur arcu mauris vel lectus. Etiam dignissim leo eget tortor dapibus, vitae interdum justo cursus.</p>
-            </article>
-        </main>
-        
-        <footer>
-            <p>Sidfot</p>
-        </footer>
 
-    </body>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Flexbox 1 - Grunhdläggande layout med Flexbox</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        /* Ändrar hur alla boxar i hela dokumentet mäts */
+        * {
+            box-sizing: border-box;
+        }
+
+        header,
+        article,
+        aside,
+        footer,
+        nav {
+            padding: 10px;
+            margin: 10px;
+            background-color: lightgray;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        article {
+            width: 30%;
+            min-width: 300px;
+            flex-grow: 1;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- header, nav och footer behövs eg. inte för exemplet -->
+    <header>
+        <h1>Namn på sidan</h1>
+    </header>
+
+    <nav>
+        <p><a href="#">Hem</a> | <a href="#">Produkter</a> | <a href="#">Tjänster</a> | <a href="#">Kontakt</a></p>
+    </nav>
+
+    <main>
+        <article>
+            <h1>Lorem ipsum dolor sit amet</h1>
+            <p>Consectetur adipiscing elit. Proin in nisi sit amet diam porttitor finibus quis ut magna. Vivamus posuere
+                finibus lacus, fringilla vestibulum orci sagittis a. Ut non dapibus sem. Morbi id nibh et nisl ornare
+                dictum. Phasellus eu felis nunc. Sed sed risus ex. Integer vestibulum nibh nec interdum congue. Ut ac
+                fermentum urna, et vestibulum metus. Sed pulvinar molestie ligula, eget aliquam velit vestibulum ut.
+                Integer a porta neque.</p>
+        </article>
+
+        <article>
+            <h1>Aenean vel eros ante</h1>
+            <p>Pellentesque dignissim vitae mauris id semper. Fusce venenatis quis erat in imperdiet. Maecenas sit amet
+                blandit nisi. Morbi tempor in est in tristique. Aenean non facilisis risus. Ut congue metus vitae lorem
+                accumsan, sed placerat neque ultricies. Vestibulum non orci gravida, accumsan turpis sit amet, tristique
+                nisi. Aliquam erat volutpat. Mauris et venenatis dolor. Interdum et malesuada fames ac ante ipsum primis
+                in faucibus. Phasellus sollicitudin lectus sit amet mauris volutpat, non aliquam sem posuere. Sed quis
+                nulla in leo tempus dictum at vitae dolor. In nec ullamcorper nulla, et porttitor nisl. Aliquam
+                pulvinar, ligula ac dapibus consectetur, ante sem blandit elit, id ullamcorper quam eros et ligula.</p>
+        </article>
+
+        <article>
+            <h1>Aliquam eu sodales mi</h1>
+            <p>Ina eleifend magna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+                Curae; Nulla ornare lorem ligula, non ultricies arcu pulvinar vel. Integer porta nisi tellus, commodo
+                elementum felis tincidunt at. Etiam ac tempor mauris. Praesent tincidunt, lacus et scelerisque dapibus,
+                dolor eros lobortis mauris, eget efficitur arcu mauris vel lectus. Etiam dignissim leo eget tortor
+                dapibus, vitae interdum justo cursus.</p>
+        </article>
+    </main>
+
+    <footer>
+        <p>Sidfot</p>
+    </footer>
+
+</body>
+
 </html>

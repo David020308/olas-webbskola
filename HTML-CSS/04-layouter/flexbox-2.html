@@ -1,86 +1,95 @@
 <!doctype html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Flexbox #1</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <style>
-            header, article, aside, footer {
-                padding: 5px 20px;
-                margin: 5px;
-            }
-            
-            header, article, aside, footer {
-                background-color: #cccccc;
-            }
-            
-            main {
-                display: flex;
-                flex-wrap: wrap;
-            }
-            
-            article {
-                flex-grow: 2;
-            }
-            
-            aside {
-                width: 200px;
-                flex-grow: 1;
-            }
-            
-            footer {
-                display: flex;
-                flex-wrap: wrap;
-            }
-            
-            footer section {
-                flex-grow: 1;
-                flex-basis: 0;
-                min-width: 300px;
-            }
-            
-            footer section:first-child{
-                padding-right: 10px;
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <h1>Flexbox #1</h1>
-            <p>Grundläggande webblayouter</p>
-            <nav>
-                <p><a href="#">Hem</a> | <a href="#">Produkter</a> | <a href="#">Tjänster</a> | <a href="#">Kontakt</a></p>
-            </nav>
-        </header>
-        
-        <main>
-            <article>
-                <h1>Huvudrubrik för artikeln här</h1>
-                <p>Innehåll, huvudartikel här. Tex texter, bilder osv.</p>
-            </article>
-            
-            <article>
-                <h1>Huvudrubrik för artikeln här</h1>
-                <p>Innehåll, huvudartikel här. Tex texter, bilder osv.</p>
-            </article>
-            
-            <aside>
-                <h1>Sidebar med widgets</h1>
-            </aside>
-        </main>
-        
-        <footer>
-            <section>
-                <h1>Kontaktuppgifter</h1>
-                <p>Kontakta oss med adresser, telefonnummer, mail, kanske en facebook eller instagram-widget, osv</p>
-            </section>
-            
-            <section>
-                <h1>Om oss</h1>
-                <p>Här kanske vi har en karta eller en kort beskrivning om företaget?</p>
-            </section>
-        </footer>
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Flexbox #2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        header,
+        article,
+        aside,
+        footer {
+            padding: 5px 20px;
+            margin: 5px;
+        }
+
+        header,
+        article,
+        aside,
+        footer {
+            background-color: #cccccc;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        article {
+            flex-grow: 2;
+        }
+
+        aside {
+            width: 200px;
+            flex-grow: 1;
+        }
+
+        footer {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        footer section {
+            flex-grow: 1;
+            flex-basis: 0;
+            min-width: 300px;
+        }
+
+        footer section:first-child {
+            padding-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Flexbox #2</h1>
+        <p>Grundläggande webblayouter</p>
+        <nav>
+            <p><a href="#">Hem</a> | <a href="#">Produkter</a> | <a href="#">Tjänster</a> | <a href="#">Kontakt</a></p>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h1>Huvudrubrik för artikeln här</h1>
+            <p>Innehåll, huvudartikel här. Tex texter, bilder osv.</p>
+        </article>
+
+        <article>
+            <h1>Huvudrubrik för artikeln här</h1>
+            <p>Innehåll, huvudartikel här. Tex texter, bilder osv.</p>
+        </article>
+
+        <aside>
+            <h1>Sidebar med widgets</h1>
+        </aside>
+    </main>
+
+    <footer>
+        <section>
+            <h1>Kontaktuppgifter</h1>
+            <p>Kontakta oss med adresser, telefonnummer, mail, kanske en facebook eller instagram-widget, osv</p>
+        </section>
+
+        <section>
+            <h1>Om oss</h1>
+            <p>Här kanske vi har en karta eller en kort beskrivning om företaget?</p>
+        </section>
+    </footer>
+</body>
+
 </html>
