@@ -1,0 +1,10 @@
+#main-menu{
+    background-color: hotpink;
+    padding: 1em;
+    margin-top: 1em;
+    display: none;
+}
+
+#main-menu.active {
+    display: block;
+}
