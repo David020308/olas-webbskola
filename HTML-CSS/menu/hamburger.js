@@ -7,10 +7,6 @@ document.getElementById('menu-button').addEventListener('click', function () {
  * From: http://jsfiddle.net/4MBQa/
 */
 function toggleClass(element, className) {
-    if (!element || !className) {
-        return;
-    }
-
     var classString = element.className, nameIndex = classString.indexOf(className);
     if (nameIndex == -1) {
         classString += ' ' + className;
